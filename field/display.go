@@ -35,7 +35,6 @@ const (
 	QueueingDisplay
 	RankingsDisplay
 	TwitchStreamDisplay
-	StatusDisplay
 )
 
 var DisplayTypeNames = map[DisplayType]string{
@@ -48,7 +47,6 @@ var DisplayTypeNames = map[DisplayType]string{
 	QueueingDisplay:        "Queueing",
 	RankingsDisplay:        "Rankings",
 	TwitchStreamDisplay:    "Twitch Stream",
-	StatusDisplay:          "Status",
 }
 
 var displayTypePaths = map[DisplayType]string{
