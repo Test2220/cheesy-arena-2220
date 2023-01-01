@@ -19,7 +19,7 @@ import (
 
 const (
 	minDisplayId       = 100
-	displayPurgeTtlMin = 30
+	displayPurgeTtlMin = 5
 )
 
 type DisplayType int
@@ -35,6 +35,7 @@ const (
 	QueueingDisplay
 	RankingsDisplay
 	TwitchStreamDisplay
+	StatusDisplay
 )
 
 var DisplayTypeNames = map[DisplayType]string{
@@ -47,6 +48,7 @@ var DisplayTypeNames = map[DisplayType]string{
 	QueueingDisplay:        "Queueing",
 	RankingsDisplay:        "Rankings",
 	TwitchStreamDisplay:    "Twitch Stream",
+	StatusDisplay:          "Status",
 }
 
 var displayTypePaths = map[DisplayType]string{
@@ -59,6 +61,7 @@ var displayTypePaths = map[DisplayType]string{
 	QueueingDisplay:        "/displays/queueing",
 	RankingsDisplay:        "/displays/rankings",
 	TwitchStreamDisplay:    "/displays/twitch",
+	StatusDisplay:          "/displays/status",
 }
 
 var displayRegistryMutex sync.Mutex
