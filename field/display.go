@@ -59,7 +59,6 @@ var displayTypePaths = map[DisplayType]string{
 	QueueingDisplay:        "/displays/queueing",
 	RankingsDisplay:        "/displays/rankings",
 	TwitchStreamDisplay:    "/displays/twitch",
-	StatusDisplay:          "/displays/status",
 }
 
 var displayRegistryMutex sync.Mutex
