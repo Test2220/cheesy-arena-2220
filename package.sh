@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+# set -e
 rm -rf db/backups
 rm -rf static/logs
 mkdir -p static/logs
