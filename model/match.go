@@ -140,7 +140,8 @@ func (match *Match) TypePrefix() string {
 
 // Returns true if the match is of a type that allows substitution of teams.
 func (match *Match) ShouldAllowSubstitution() bool {
-	return match.Type != "qualification"
+	// return match.Type != "qualification"
+	return true
 }
 
 // Returns true if the red and yellow cards should be updated as a result of the match.
