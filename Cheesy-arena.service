@@ -1,0 +1,9 @@
+[Unit]
+Description=Cheesy Arena Lite Services
+[Service]
+Type=Simple
+RestartSec=1
+ExecStart=/CheesyArena/cheesy-arena-lite
+WorkingDirectory=/CheesyArena/
+[Install]
+WantedBy=multi-user.target
