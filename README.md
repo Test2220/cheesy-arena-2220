@@ -23,6 +23,16 @@ On recent versions of macOS, you may be prevented from running an app from an un
 1. Run the `cheesy-arena-lite` or `cheesy-arena-lite.exe` binary
 1. Navigate to http://localhost:8080 in your browser (Google Chrome recommended)
 
+**LXC Conainer install**
+
+Recomended container values for running Cheesy Arena
+
+* 4 CPU cores
+* 1048 MB Ram
+* 4GB+ VDisk (use larger disks size for longer log files/retention)
+
+Automatic script is located in the [LXCinstaller.sh](https://github.com/Test2220/cheesy-arena-2220/blob/e450bf74f603a3b6c8f5e426a889dbbc570b523e/LXCinstaller.sh) shell script.  This script will automaticly pull Go 1.21.1 and clone this repository to the container and build
+
 **IP address configuration**
 
 When running Cheesy Arena Lite on a playing field with robots, set the IP address of the computer running Cheesy Arena Lite to 10.0.100.5. By a convention baked into the FRC Driver Station software, driver stations will broadcast their presence on the network to this hardcoded address so that the FMS does not need to discover them by some other method.
