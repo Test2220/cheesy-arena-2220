@@ -116,22 +116,22 @@ body[data-position=right] #inMatch #blueScore {
 /* Pre Match */
 #preMatch #teamNumber {
   position: absolute;
-  top: 100px;
+  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
-  font-size: 450px;
+  font-size: 280px;
   line-height: 450px;
   text-align: center;
 }
 #preMatch .databar {
   position: absolute;
-  bottom: 100px;
+  bottom: -40px;
   left: 0;
   right: 0;
   margin: 0 auto;
   height: 200px;
-  line-height: 200px;
+  line-height: 80px;
   text-align: center;
   font-family: "FuturaLT";
   font-size: 120px;
